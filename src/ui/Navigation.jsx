@@ -14,7 +14,7 @@ function Navigation() {
     <StyledNavigation>
       <Row>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/edit">Edit</NavLink>
+        <NavLink to="/details">Details</NavLink>
       </Row>
     </StyledNavigation>
   );

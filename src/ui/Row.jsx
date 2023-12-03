@@ -30,6 +30,7 @@ const Row = styled.div`
   ${(props) =>
     props.$width &&
     css`
+      width: ${props.$width}rem;
       max-width: ${props.$width}rem;
     `}
 `;

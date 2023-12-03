@@ -1,9 +1,11 @@
 import MainInsert from "../features/insert/MainInsert";
-import InsertForm from "../features/insert/InsertForm";
-import { useUser } from "../features/insert/useUser";
-import Required from "../ui/Required";
 
-function EditPage() {
+import Required from "../ui/Required";
+import Details from "../ui/Details";
+
+import { useUser } from "../features/insert/useUser";
+
+function DetailsPage() {
   const { user } = useUser();
 
   return (
@@ -14,10 +16,10 @@ function EditPage() {
           view) and save it to edit.
         </Required>
       ) : (
-        <InsertForm type="edit" />
+        <Details userData={user.users} />
       )}
     </MainInsert>
   );
 }
 
-export default EditPage;
+export default DetailsPage;

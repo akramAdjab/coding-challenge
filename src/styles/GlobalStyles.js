@@ -228,6 +228,10 @@ const GlobaStyles = createGlobalStyle`
     }
 
     /* --- UTILS --- */
+    .container {
+        max-width: 45rem;
+    }
+
     .text-center {
         text-align: center;
     }
